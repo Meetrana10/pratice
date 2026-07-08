@@ -3,7 +3,7 @@ const cors = require("cors");
 const mysql = require("mysql2/promise");
 
 const app = express();
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -11,16 +11,15 @@ app.use(express.json());
 // ---- Database Setup ----
 // Create a connection pool (better than a single connection for a server)
 const pool = mysql.createPool({
-  host: "mysql.railway.internal",
-  port: 3306,
-  user: "root",
-  password: "knvYOLhbgZqHGMRBgRLgMnOLUGJJUrPk", // leave empty since XAMPP default has no password
-  database: "railway",
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0,
+    host: process.env.MYSQLHOST,
+    port: process.env.MYSQLPORT,
+    user: process.env.MYSQLUSER,
+    password: process.env.MYSQLPASSWORD,
+    database: process.env.MYSQLDATABASE,
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0,
 });
-
 (async () => {
     try {
         await pool.query(`
