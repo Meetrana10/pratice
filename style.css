@@ -1,0 +1,290 @@
+/* ===========================
+   GENERAL
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Segoe UI, Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* ===========================
+NAVBAR
+=========================== */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* ===========================
+HERO SECTION
+=========================== */
+
+.hero {
+
+    background: linear-gradient(135deg, #0b8457, #4CAF50);
+
+    color: #fff;
+
+    padding: 70px 0;
+
+}
+
+.hero h1 {
+
+    font-size: 48px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+}
+
+.hero p {
+
+    font-size: 20px;
+
+    opacity: .9;
+
+}
+
+.hero img {
+
+    border-radius: 15px;
+
+}
+
+/* ===========================
+CARD
+=========================== */
+
+.card {
+
+    border: none;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+.card-body {
+
+    padding: 35px;
+
+}
+
+/* ===========================
+FORM
+=========================== */
+
+label {
+
+    font-weight: 600;
+
+    margin-bottom: 6px;
+
+}
+
+.form-control,
+.form-select {
+
+    height: 48px;
+
+    border-radius: 10px;
+
+}
+
+textarea.form-control {
+
+    height: auto;
+
+}
+
+.form-control:focus,
+.form-select:focus {
+
+    border-color: #28a745;
+
+    box-shadow: 0 0 10px rgba(40, 167, 69, .25);
+
+}
+
+/* ===========================
+BUTTON
+=========================== */
+
+.btn-success {
+
+    background: #198754;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 14px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.btn-success:hover {
+
+    background: #157347;
+
+    transform: translateY(-2px);
+
+}
+
+/* ===========================
+PRICE BOX
+=========================== */
+
+.price-box {
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    background: #f8f9fa;
+
+    transition: .3s;
+
+}
+
+.price-box:hover {
+
+    background: #e8f5e9;
+
+    transform: scale(1.02);
+
+}
+
+.price-box h4 {
+
+    color: #198754;
+
+}
+
+.price-box h2 {
+
+    font-size: 36px;
+
+    color: #0b8457;
+
+    font-weight: bold;
+
+}
+
+/* ===========================
+ESTIMATED PRICE
+=========================== */
+
+#totalPrice {
+
+    text-align: center;
+
+    color: #198754;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer {
+
+    margin-top: 40px;
+
+    font-size: 15px;
+
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:992px) {
+
+    .hero {
+
+        text-align: center;
+
+    }
+
+    .hero h1 {
+
+        font-size: 34px;
+
+    }
+
+    .hero p {
+
+        font-size: 18px;
+
+    }
+
+    .card {
+
+        margin-top: 25px;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .hero {
+
+        padding: 40px 0;
+
+    }
+
+    .hero h1 {
+
+        font-size: 28px;
+
+    }
+
+    .card-body {
+
+        padding: 20px;
+
+    }
+
+    .btn-success {
+
+        font-size: 16px;
+
+    }
+
+    .price-box h2 {
+
+        font-size: 30px;
+
+    }
+
+}
